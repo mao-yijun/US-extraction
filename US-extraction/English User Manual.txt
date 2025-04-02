@@ -1,0 +1,144 @@
+# US Image Extractor
+## User Manual
+
+### Table of Contents
+1. Introduction
+2. System Requirements
+3. Getting Started
+4. Interface Overview
+5. Working with Images
+   - Selecting Input Images
+   - Selecting Output Folder
+   - Setting Image Format
+   - Processing Images
+6. Understanding the Results
+7. Troubleshooting
+8. Technical Support
+
+---
+
+## 1. Introduction
+
+US Image Extractor is a specialized open-source application designed to automatically detect and extract ultrasound image regions from medical images. The software analyzes the provided images including standard image formats and DICOM files, identifies the ultrasound region using advanced image processing techniques, and saves the extracted region as a separate image file. This tool is particularly valuable for medical professionals and researchers working with ultrasound data. It helps automatically extract the pure ultrasound region by determining and eliminating patient information and technical parameters, thereby protecting patient privacy and facilitating more efficient image processing workflows.
+
+## 2. System Requirements
+
+- Operating System: Windows 7 or later
+- Screen Resolution: 1280 × 800 or higher (recommended)
+- Processor: 1.5 GHz or faster
+- Memory: Minimum 4GB RAM
+- Storage: 100MB of available disk space
+- Compatible with standard graphics adapters
+
+## 3. Getting Started
+
+1. Download the application  (USImageExtractor.exe or USImageExtractor.rar).
+2. If downloaded as a compressed file, extract the contents to your preferred location.
+3. Launch the US Image Extractor application by double-clicking on the program icon.
+4. The main application window will appear, displaying the user interface.
+5. No additional installation or configuration is required to begin using the software.
+
+## 4. Interface Overview
+
+The US Image Extractor interface is designed for simplicity and efficiency, consisting of three main sections:
+
+- **Top Section**: Contains input/output controls and processing options
+  - Input folder selection
+  - Output folder selection
+  - Output format options
+  - Processing button
+  
+- **Middle Section**: Displays visual feedback
+  - Left panel: Original image
+  - Right panel: Processed image with extracted ultrasound region
+  
+- **Bottom Section**: Status and information area
+  - Processing log with detailed operation information
+  - Status messages and progress indicators
+
+## 5. Working with Images
+
+### Selecting Input Images
+
+1. Click the "Select Input Folder" button at the top of the application.
+2. In the file dialog that appears, navigate to the location of your images.
+3. Select one or multiple image files (supported formats: BMP, JPG, JPEG, PNG, TIFF, GIF, and DICOM).
+4. Click "Open" to confirm your selection.
+5. Once selected, the path to the input folder will be displayed, and the first image will be shown in the "Original Image" panel.
+
+### Selecting Output Folder
+
+1. Click the "Select Output Folder" button.
+2. In the folder dialog that appears, navigate to and select the folder where you want the processed images to be saved.
+3. Click "Choose" to confirm your selection.
+4. The selected output path will be displayed in the interface for confirmation.
+
+### Setting Image Format
+
+1. Use the "Output Image Format" dropdown menu to select your preferred file format for the extracted images.
+2. Available options include: JPEG, JPG, PNG, BMP, and TIFF.
+3. The selected format will be applied to all processed images in the batch.
+4. Consider your needs for image quality and file size when selecting the format.
+
+### Processing Images
+
+1. After selecting both input images and output folder, the "Process Images" button will become active.
+2. Click "Process Images" to start the extraction process.
+3. The application will process each selected image sequentially.
+4. A progress log will appear in the bottom section, showing the status of each image being processed.
+5. When processing is complete, a confirmation notification will appear and automatically close after one second.
+6. You can process additional batches of images by selecting a new input folder and repeating the steps.
+
+## 6. Results
+
+After processing:
+
+- The original image is displayed in the left panel for reference.
+- The extracted ultrasound region is displayed in the right panel for immediate verification.
+- All extracted images are saved to your specified output folder with the naming format: `[original_filename]_us_image.[selected_format]`.
+- The log section at the bottom shows the full paths of both original and processed images for traceability.
+
+The extraction algorithm automatically identifies the ultrasound region by detecting the largest connected component in the image, which typically corresponds to the ultrasound scan area. This automated approach works effectively for most standard ultrasound images but may require adjustments for specialized or non-standard formats.
+
+## 7. Troubleshooting
+
+**Issue**: Images are not loading
+- Ensure the image files are not corrupted
+- Verify that the file format is supported (BMP, JPG, JPEG, PNG, TIFF, GIF, or DICOM)
+- For DICOM files, ensure they contain valid pixel data
+- Check file permissions to ensure the application has read access to the files
+
+**Issue**: Extracted region is incorrect
+- Some images may have complex backgrounds that confuse the detection algorithm
+- Try to crop the images manually before processing to remove extraneous information
+- Consider adjusting the contrast of difficult images before processing
+- For batch processing, separate images with similar characteristics for optimal results
+
+**Issue**: Application is unresponsive
+- For large images or multiple files, processing may take additional time
+- Check that your system meets or exceeds the minimum requirements
+- Close other resource-intensive applications while running US Image Extractor
+- Restart the application if performance issues persist
+
+**Issue**: Output files not appearing in destination folder
+- Verify that you have write permissions for the selected output folder
+- Ensure adequate disk space is available in the destination location
+- Check if antivirus software is blocking the write operations
+
+## 8. Technical Support
+
+If you encounter any issues not addressed in this manual, you can send new issue and describe problems you faced.
+Also, you can contact technical support:
+- Email: mao_yijun0731@hotmail.com
+
+
+For bug reports, please include:
+- Your operating system version
+- Application version number
+- Description of the issue
+- Steps to reproduce the problem
+- Sample images (if applicable and not containing sensitive information)
+
+---
+
+© 2025 US Image Extractor. All rights reserved.
